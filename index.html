@@ -1,37 +1,19 @@
-#canvas 
-{ 
-    border: 1px solid black; 
-    margin: 10px 0 10px 0; 
-    cursor: pointer; 
-} 
-#colors button 
-{ 
-    width: 40px; 
-    height: 40px; 
-    border-radius: 100%; 
-    margin-top: 0px; 
-} 
-#black  
-{ 
-    background: black; 
-} 
-#pink  
-{ 
-    background: pink; 
-} 
-#red 
-{ 
-    background: red; 
-} 
-#green  
-{  
-    background: green; 
-} 
-#blue  
-{ 
-    background: blue; 
-} 
-#orange  
-{ 
-    background: orange; 
-}
+<!DOCTYPE HTML> 
+<html> 
+    <body> 
+		<link rel="stylesheet" href="Iko CSS Nyo.css" type="text/css" />
+		<script src="Iko JavaScript Nyo.js" type="text/javascript"></script>
+        <div id='colors'> 
+            <button id='black' onclick='changeColor("black")' ontouchstart='changeColor("black")'></button> 
+            <button id='red' onclick='changeColor("red")' ontouchstart='changeColor("red")'></button> 
+            <button id='green' onclick='changeColor("green")' ontouchstart='changeColor("green")'></button> 
+            <button id='blue' onclick='changeColor("blue")' ontouchstart='changeColor("blue")'></button> 
+            <button id='orange' onclick='changeColor("orange")' ontouchstart='changeColor("orange")'></button> 
+            <button id='pink' onclick='changeColor("pink")' ontouchstart='changeColor("pink")'></button> 
+        </div> 
+        <canvas id='canvas' width='300' height='200'></canvas> 
+        <div> 
+            <button onclick='clearCanvas()'>Clear</button> 
+        </div> 
+    </body> 
+</html>
